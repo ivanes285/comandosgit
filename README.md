@@ -95,3 +95,7 @@ git branch -d 'namerama'
 ```
 git checkout -b 'newnamerama'
 ```
+-- Guardar y hacer un commit en el mismo comando 
+```
+git commit -am "comentario"
+```

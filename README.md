@@ -61,6 +61,11 @@ git log --stat
 ```
 git log --pretty=oneline  
 ```
+- Otra manera mas ordenada y amistosa de mostrar los logs
+```
+git log --oneline --decorate --all --graph
+```
+
 - Si quieres editar el ultimo commit porque olvidaste guardar un cambio, pues add el archivo modificado y luego ejecutas este comando
 ```
 git commit --amend  
@@ -76,4 +81,17 @@ git remote
 - Este comando me permite establecer una nueva URL de un repositorio git remoto 
 ```
 git remote set-url origin new.git.url
+```
+- Union de una rama 'namerama' con la rama principal (main)
+```
+git checkout main 
+git merge 'namerama'
+```
+- Eliminar una rama 
+```
+git branch -d 'namerama'
+```
+-- Crear una rama y cambiarnos en el mismo comando 
+```
+git checkout -b 'newnamerama'
 ```
